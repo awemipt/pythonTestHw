@@ -1,0 +1,32 @@
+Test Output:
+Trying:
+    encode('SOS')
+Expecting:
+    '... --- ...'
+ok
+Trying:
+    encode(1)
+Expecting:
+    Traceback (most recent call last):
+        ...
+    ValueError: message must be str
+ok
+Trying:
+    encode('ф')
+Expecting:
+    Traceback (most recent call last):
+        ...
+    KeyError: 'non specified symbols'
+ok
+Trying:
+    encode("MORSE CODE")
+Expecting:
+    '-- --- .-. ... . / -.-. --- -.. .'
+ok
+1 items had no tests:
+    issue1
+1 items passed all tests:
+   4 tests in issue1.encode
+4 tests in 2 items.
+4 passed and 0 failed.
+Test passed.
